@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cat_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/colorPastelGreen"
+    card_view:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/event_id"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Id"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="50dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Name"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_event_id"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_tickets"
+            android:layout_width="50dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Tickets"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_event_category_id"
+            card_view:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+        <TextView
+            android:id="@+id/event_category_id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Category id"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/event_id" />
+
+        <TextView
+            android:id="@+id/event_active"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="Active?"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_event_id"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            card_view:layout_constraintStart_toEndOf="@+id/event_id"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            card_view:layout_constraintStart_toEndOf="@+id/event_name"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tickets"
+            android:layout_width="50dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="72dp"
+            android:text="TextView"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_event_category_id"
+            android:layout_width="75dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            card_view:layout_constraintStart_toEndOf="@+id/event_category_id"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_event_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,1 @@
+Event Management App that I created as an assignment for one of my University unit, which is Mobile App Development.

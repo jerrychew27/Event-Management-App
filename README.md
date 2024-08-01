@@ -1,1 +1,1 @@
-# Event-Management-App
+Event Management App coded in Java programming language in Android Studio, as part of an assignment from Monash's mobile app development unit.
